@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Aventura na Itália ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0, #fd79a8, #e17055);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .slide {
+            display: none;
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .romantic-title {
+            font-family: 'Playfair Display', serif;
+            text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .heart-pulse {
+            animation: heartPulse 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes heartPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .custom-brown {
+            color: #8B4513;
+        }
+        
+        .bg-custom-brown {
+            background-color: #8B4513;
+        }
+        
+        .border-custom-brown {
+            border-color: #8B4513;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-4xl w-full">
+        <!-- Slide 1: Introdução -->
+        <div class="slide active bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl text-center">
+            <div class="floating text-6xl mb-6">✈️</div>
+            <!-- Mapa da Itália SVG -->
+            <div class="mb-6">
+                <svg width="200" height="240" viewBox="0 0 200 240" class="mx-auto floating">
+                    <path d="M100 20 Q120 30 130 50 Q140 70 135 90 Q130 110 125 130 Q120 150 115 170 Q110 190 105 210 Q100 230 95 210 Q90 190 85 170 Q80 150 75 130 Q70 110 65 90 Q60 70 70 50 Q80 30 100 20 Z" fill="#fab1a0" stroke="#8B4513" stroke-width="2"/>
+                    <circle cx="85" cy="80" r="3" fill="#e17055"/>
+                    <circle cx="110" cy="120" r="3" fill="#fd79a8"/>
+                    <circle cx="95" cy="160" r="3" fill="#ffeaa7"/>
+                    <text x="100" y="250" text-anchor="middle" class="text-sm font-semibold custom-brown">ITÁLIA</text>
+                </svg>
+            </div>
+            <h1 class="romantic-title text-4xl md:text-6xl font-bold custom-brown mb-6">
+                Prepara sua mochila, amor...
+            </h1>
+            <div class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
+                Porque a gente vai viver o nosso próprio<br>
+                <span class="italic font-semibold text-pink-600">"Comer, Rezar, Amar"</span><br>
+                <span class="text-lg">(com menos reza e mais comida e amor)</span>
+            </div>
+            <div class="heart-pulse text-4xl">❤️</div>
+        </div>
+
+        <!-- Slide 2: Destino Itália -->
+        <div class="slide bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl text-center">
+            <div class="floating text-6xl mb-6">🇮🇹</div>
+            <!-- Salerno Cityscape SVG -->
+            <div class="mb-6">
+                <svg width="300" height="150" viewBox="0 0 300 150" class="mx-auto">
+                    <!-- Mar -->
+                    <rect x="0" y="100" width="300" height="50" fill="#74b9ff"/>
+                    <!-- Montanhas -->
+                    <polygon points="0,100 50,60 100,80 150,50 200,70 250,40 300,60 300,100" fill="#81ecec"/>
+                    <!-- Cidade -->
+                    <rect x="20" y="85" width="15" height="15" fill="#fab1a0"/>
+                    <rect x="40" y="80" width="12" height="20" fill="#fd79a8"/>
+                    <rect x="60" y="88" width="18" height="12" fill="#ffeaa7"/>
+                    <rect x="85" y="82" width="14" height="18" fill="#e17055"/>
+                    <rect x="105" y="87" width="16" height="13" fill="#fab1a0"/>
+                    <rect x="130" y="85" width="20" height="15" fill="#fd79a8"/>
+                    <!-- Porto -->
+                    <rect x="200" y="95" width="80" height="5" fill="#636e72"/>
+                    <polygon points="220,95 230,90 240,95" fill="#2d3436"/>
+                    <text x="150" y="140" text-anchor="middle" class="text-sm font-semibold custom-brown">SALERNO</text>
+                </svg>
+            </div>
+            <h1 class="romantic-title text-4xl md:text-5xl font-bold custom-brown mb-6">
+                Destino: Itália ❤️✈️
+            </h1>
+            <div class="bg-pink-100 rounded-2xl p-6 mb-6">
+                <div class="text-xl md:text-2xl custom-brown font-semibold mb-4">
+                    📅 Saída dia 24/07 de Nantes
+                </div>
+                <div class="text-lg text-gray-700 mb-2">→ rumo a Salerno</div>
+                <div class="text-lg font-medium text-pink-600">
+                    🏨 Primeira parada: Suite 84 Holiday Home
+                </div>
+            </div>
+            <div class="text-5xl">🌟</div>
+        </div>
+
+        <!-- Slide 3: Costa Amalfitana -->
+        <div class="slide bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl text-center">
+            <div class="floating text-6xl mb-6">🏖️</div>
+            <!-- Costa Amalfitana SVG -->
+            <div class="mb-6">
+                <svg width="320" height="180" viewBox="0 0 320 180" class="mx-auto">
+                    <!-- Céu -->
+                    <rect x="0" y="0" width="320" height="120" fill="#74b9ff"/>
+                    <!-- Sol -->
+                    <circle cx="280" cy="30" r="15" fill="#fdcb6e"/>
+                    <!-- Mar -->
+                    <rect x="0" y="120" width="320" height="60" fill="#0984e3"/>
+                    <!-- Ondas -->
+                    <path d="M0,130 Q20,125 40,130 T80,130 T120,130 T160,130 T200,130 T240,130 T280,130 T320,130" stroke="#74b9ff" stroke-width="2" fill="none"/>
+                    <!-- Montanhas costeiras -->
+                    <polygon points="0,120 60,60 120,80 180,50 240,70 300,40 320,60 320,120" fill="#00b894"/>
+                    <!-- Casas coloridas -->
+                    <rect x="70" y="85" width="12" height="15" fill="#fab1a0"/>
+                    <polygon points="70,85 76,78 82,85" fill="#e17055"/>
+                    <rect x="90" y="88" width="10" height="12" fill="#fd79a8"/>
+                    <polygon points="90,88 95,82 100,88" fill="#e17055"/>
+                    <rect x="110" y="82" width="14" height="18" fill="#ffeaa7"/>
+                    <polygon points="110,82 117,75 124,82" fill="#e17055"/>
+                    <rect x="130" y="90" width="11" height="10" fill="#a29bfe"/>
+                    <polygon points="130,90 135.5,84 141,90" fill="#e17055"/>
+                    <!-- Estrada serpenteante -->
+                    <path d="M50,100 Q80,95 110,100 T170,100 T230,100" stroke="#636e72" stroke-width="3" fill="none"/>
+                    <text x="160" y="175" text-anchor="middle" class="text-sm font-semibold custom-brown">COSTA AMALFITANA</text>
+                </svg>
+            </div>
+            <h1 class="romantic-title text-4xl md:text-5xl font-bold custom-brown mb-6">
+                Dia 25: A Costa Amalfitana ☀️🏖️
+            </h1>
+            <div class="bg-blue-100 rounded-2xl p-6 mb-6">
+                <div class="text-xl text-gray-700 mb-4">
+                    🚌 Um ônibus, várias praias...
+                </div>
+                <div class="text-2xl font-semibold text-blue-600 mb-4">
+                    e você decide onde paramos!
+                </div>
+                <div class="text-lg custom-brown">
+                    🌅 Chegada final em Sorrento no fim do dia
+                </div>
+            </div>
+            <div class="text-4xl">🌊✨</div>
+        </div>
+
+        <!-- Slide 4: Casa com vista -->
+        <div class="slide bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl text-center">
+            <div class="floating text-6xl mb-6">🏡</div>
+            <!-- Sorrento Hillside SVG -->
+            <div class="mb-6">
+                <svg width="300" height="200" viewBox="0 0 300 200" class="mx-auto">
+                    <!-- Céu noturno -->
+                    <rect x="0" y="0" width="300" height="140" fill="#2d3436"/>
+                    <!-- Estrelas -->
+                    <circle cx="50" cy="20" r="1" fill="#ffeaa7"/>
+                    <circle cx="120" cy="15" r="1" fill="#ffeaa7"/>
+                    <circle cx="200" cy="25" r="1" fill="#ffeaa7"/>
+                    <circle cx="250" cy="18" r="1" fill="#ffeaa7"/>
+                    <!-- Lua -->
+                    <circle cx="260" cy="40" r="12" fill="#ffeaa7"/>
+                    <!-- Colinas -->
+                    <polygon points="0,140 80,100 160,120 240,90 300,110 300,140" fill="#00b894"/>
+                    <!-- Limoeiros -->
+                    <circle cx="60" cy="115" r="8" fill="#00b894"/>
+                    <circle cx="140" cy="125" r="10" fill="#00b894"/>
+                    <circle cx="220" cy="105" r="9" fill="#00b894"/>
+                    <!-- Limões -->
+                    <circle cx="58" cy="112" r="2" fill="#fdcb6e"/>
+                    <circle cx="62" cy="118" r="2" fill="#fdcb6e"/>
+                    <circle cx="138" cy="122" r="2" fill="#fdcb6e"/>
+                    <circle cx="142" cy="128" r="2" fill="#fdcb6e"/>
+                    <!-- Casa/Glamping -->
+                    <polygon points="120,130 140,120 160,130 160,150 120,150" fill="#fab1a0"/>
+                    <polygon points="120,130 140,115 160,130" fill="#e17055"/>
+                    <rect x="135" y="140" width="8" height="10" fill="#8B4513"/>
+                    <rect x="125" y="135" width="6" height="6" fill="#74b9ff"/>
+                    <rect x="149" y="135" width="6" height="6" fill="#74b9ff"/>
+                    <!-- Terraço -->
+                    <rect x="110" y="150" width="80" height="20" fill="#ddd"/>
+                    <text x="150" y="190" text-anchor="middle" class="text-sm font-semibold custom-brown">SORRENTO</text>
+                </svg>
+            </div>
+            <h1 class="romantic-title text-4xl md:text-5xl font-bold custom-brown mb-6">
+                Casa com vista e grilos cantando
+            </h1>
+            <div class="bg-green-100 rounded-2xl p-6 mb-6">
+                <div class="text-xl custom-brown font-semibold mb-4">
+                    📅 De 25 a 28/07
+                </div>
+                <div class="text-lg text-gray-700 mb-2">
+                    🏕️ Hostel & Glamping Santa Fortunata
+                </div>
+                <div class="text-xl font-medium text-green-600">
+                    Nosso ninho com cheiro de limão siciliano 🍋
+                </div>
+            </div>
+            <div class="text-4xl">🌿💕</div>
+        </div>
+
+        <!-- Slide 5: Capri -->
+        <div class="slide bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl text-center">
+            <div class="floating text-6xl mb-6">🛥️</div>
+            <!-- Capri Island SVG -->
+            <div class="mb-6">
+                <svg width="350" height="220" viewBox="0 0 350 220" class="mx-auto">
+                    <!-- Céu -->
+                    <rect x="0" y="0" width="350" height="150" fill="#74b9ff"/>
+                    <!-- Nuvens -->
+                    <ellipse cx="80" cy="30" rx="15" ry="8" fill="white" opacity="0.8"/>
+                    <ellipse cx="250" cy="40" rx="20" ry="10" fill="white" opacity="0.8"/>
+                    <!-- Mar -->
+                    <rect x="0" y="150" width="350" height="70" fill="#0984e3"/>
+                    <!-- Ondas -->
+                    <path d="M0,160 Q25,155 50,160 T100,160 T150,160 T200,160 T250,160 T300,160 T350,160" stroke="#74b9ff" stroke-width="2" fill="none"/>
+                    <!-- Ilha de Capri -->
+                    <polygon points="100,150 180,80 220,90 280,70 320,90 350,100 350,150 100,150" fill="#00b894"/>
+                    <!-- Faraglioni (rochas famosas) -->
+                    <rect x="280" y="120" width="15" height="30" fill="#636e72"/>
+                    <rect x="300" y="115" width="12" height="35" fill="#636e72"/>
+                    <rect x="318" y="125" width="10" height="25" fill="#636e72"/>
+                    <!-- Vegetação -->
+                    <circle cx="150" cy="120" r="8" fill="#00b894"/>
+                    <circle cx="200" cy="110" r="10" fill="#00b894"/>
+                    <circle cx="240" cy="115" r="7" fill="#00b894"/>
+                    <!-- Barco -->
+                    <ellipse cx="120" cy="170" rx="20" ry="6" fill="white"/>
+                    <rect x="115" y="165" width="10" height="8" fill="#fab1a0"/>
+                    <line x1="120" y1="165" x2="120" y2="155" stroke="#8B4513" stroke-width="2"/>
+                    <polygon points="120,155 125,160 115,160" fill="#e17055"/>
+                    <!-- Gruta Azul -->
+                    <ellipse cx="200" cy="145" rx="12" ry="8" fill="#0984e3"/>
+                    <text x="175" y="210" text-anchor="middle" class="text-sm font-semibold custom-brown">CAPRI</text>
+                </svg>
+            </div>
+            <h1 class="romantic-title text-4xl md:text-5xl font-bold custom-brown mb-6">
+                O Amor está no ar<br>
+                <span class="text-2xl">(literalmente, em um barco)</span>
+            </h1>
+            <div class="bg-cyan-100 rounded-2xl p-6 mb-6">
+                <div class="text-2xl font-bold text-cyan-600 mb-4">
+                    🌴 Vamos para Capri, seu maior sonho! 🌊
+                </div>
+                <div class="text-lg text-gray-700 mb-2">
+                    ⛵ Passeio de barco, grutas, mar azul surreal
+                </div>
+                <div class="text-xl italic font-medium text-pink-600">
+                    Comer, Rezar, Amar?<br>
+                    Mais tipo: Beijar, Navegar, Amar. 💋
+                </div>
+            </div>
+            <div class="text-4xl">🏝️💙</div>
+        </div>
+
+        <!-- Slide 6: Báia Regina Giovanna -->
+        <div class="slide bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl text-center">
+            <div class="floating text-6xl mb-6">🏊‍♀️</div>
+            <!-- Báia Regina Giovanna SVG -->
+            <div class="mb-6">
+                <svg width="320" height="200" viewBox="0 0 320 200" class="mx-auto">
+                    <!-- Céu -->
+                    <rect x="0" y="0" width="320" height="120" fill="#74b9ff"/>
+                    <!-- Sol -->
+                    <circle cx="280" cy="25" r="12" fill="#fdcb6e"/>
+                    <!-- Mar cristalino -->
+                    <rect x="0" y="120" width="320" height="80" fill="#00cec9"/>
+                    <!-- Reflexos do sol na água -->
+                    <ellipse cx="280" cy="140" rx="8" ry="3" fill="#fdcb6e" opacity="0.6"/>
+                    <!-- Formação rochosa natural -->
+                    <polygon points="50,120 100,80 150,90 200,70 250,85 300,75 320,90 320,120" fill="#636e72"/>
+                    <!-- Arco natural (ponte) -->
+                    <path d="M120,120 Q140,100 160,120" stroke="#636e72" stroke-width="8" fill="none"/>
+                    <ellipse cx="140" cy="115" rx="20" ry="8" fill="#74b9ff"/>
+                    <!-- Vegetação nas rochas -->
+                    <circle cx="80" cy="95" r="6" fill="#00b894"/>
+                    <circle cx="180" cy="85" r="5" fill="#00b894"/>
+                    <circle cx="220" cy="80" r="7" fill="#00b894"/>
+                    <!-- Pessoas nadando -->
+                    <circle cx="100" cy="150" r="3" fill="#fab1a0"/>
+                    <circle cx="180" cy="145" r="3" fill="#fd79a8"/>
+                    <!-- Ondas suaves -->
+                    <path d="M0,130 Q20,128 40,130 T80,130 T120,130 T160,130 T200,130 T240,130 T280,130 T320,130" stroke="white" stroke-width="1" fill="none" opacity="0.7"/>
+                    <text x="160" y="195" text-anchor="middle" class="text-sm font-semibold custom-brown">BÁIA REGINA GIOVANNA</text>
+                </svg>
+            </div>
+            <h1 class="romantic-title text-3xl md:text-4xl font-bold custom-brown mb-6">
+                Báia Regina Giovanna:<br>
+                <span class="text-2xl">onde os deuses da beleza tomam banho</span>
+            </h1>
+            <div class="bg-teal-100 rounded-2xl p-6 mb-6">
+                <div class="text-xl text-gray-700 mb-4">
+                    🏊‍♂️ Um dia só para nadar
+                </div>
+                <div class="text-xl text-gray-700 mb-4">
+                    🕳️ Explorar grutas
+                </div>
+                <div class="text-2xl font-semibold text-teal-600">
+                    😄 E rir da vida!
+                </div>
+            </div>
+            <div class="text-4xl">🌊🧜‍♀️</div>
+        </div>
+
+        <!-- Slide 7: Roma -->
+        <div class="slide bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl text-center">
+            <div class="floating text-6xl mb-6">🏛️</div>
+            <!-- Colosseum SVG -->
+            <div class="mb-6">
+                <svg width="300" height="180" viewBox="0 0 300 180" class="mx-auto">
+                    <!-- Céu -->
+                    <rect x="0" y="0" width="300" height="120" fill="#fab1a0"/>
+                    <!-- Sol poente -->
+                    <circle cx="250" cy="30" r="15" fill="#fdcb6e"/>
+                    <!-- Coliseu base -->
+                    <ellipse cx="150" cy="160" rx="120" ry="20" fill="#ddd"/>
+                    <!-- Coliseu estrutura principal -->
+                    <rect x="50" y="80" width="200" height="80" fill="#e17055" rx="10"/>
+                    <!-- Arcos do primeiro andar -->
+                    <rect x="60" y="90" width="15" height="25" fill="#8B4513" rx="7"/>
+                    <rect x="80" y="90" width="15" height="25" fill="#8B4513" rx="7"/>
+                    <rect x="100" y="90" width="15" height="25" fill="#8B4513" rx="7"/>
+                    <rect x="120" y="90" width="15" height="25" fill="#8B4513" rx="7"/>
+                    <rect x="140" y="90" width="15" height="25" fill="#8B4513" rx="7"/>
+                    <rect x="160" y="90" width="15" height="25" fill="#8B4513" rx="7"/>
+                    <rect x="180" y="90" width="15" height="25" fill="#8B4513" rx="7"/>
+                    <rect x="200" y="90" width="15" height="25" fill="#8B4513" rx="7"/>
+                    <rect x="220" y="90" width="15" height="25" fill="#8B4513" rx="7"/>
+                    <!-- Arcos do segundo andar -->
+                    <rect x="65" y="120" width="12" height="20" fill="#8B4513" rx="6"/>
+                    <rect x="85" y="120" width="12" height="20" fill="#8B4513" rx="6"/>
+                    <rect x="105" y="120" width="12" height="20" fill="#8B4513" rx="6"/>
+                    <rect x="125" y="120" width="12" height="20" fill="#8B4513" rx="6"/>
+                    <rect x="145" y="120" width="12" height="20" fill="#8B4513" rx="6"/>
+                    <rect x="165" y="120" width="12" height="20" fill="#8B4513" rx="6"/>
+                    <rect x="185" y="120" width="12" height="20" fill="#8B4513" rx="6"/>
+                    <rect x="205" y="120" width="12" height="20" fill="#8B4513" rx="6"/>
+                    <rect x="225" y="120" width="12" height="20" fill="#8B4513" rx="6"/>
+                    <!-- Parte destruída -->
+                    <polygon points="200,80 250,80 250,160 220,160" fill="#636e72"/>
+                    <!-- Sombra -->
+                    <ellipse cx="150" cy="165" rx="100" ry="15" fill="#636e72" opacity="0.3"/>
+                    <text x="150" y="175" text-anchor="middle" class="text-sm font-semibold custom-brown">COLISEU - ROMA</text>
+                </svg>
+            </div>
+            <h1 class="romantic-title text-4xl md:text-5xl font-bold custom-brown mb-6">
+                Dia 28: Adeus mar, olá Coliseu! ⚔️🌍
+            </h1>
+            <div class="bg-red-100 rounded-2xl p-6 mb-6">
+                <div class="text-lg custom-brown mb-2">
+                    🚌 Ônibus às 6h para Roma
+                </div>
+                <div class="text-lg custom-brown mb-4">
+                    🕙 Chegada às 10h
+                </div>
+                <div class="text-xl font-semibold text-red-600">
+                    🏨 Check-in no Hotel Cosmos<br>
+                    <span class="text-lg">(Via Emanuele Filiberto)</span>
+                </div>
+            </div>
+            <div class="text-4xl">🦅🏺</div>
+        </div>
+
+        <!-- Slide 8: Roma do nosso jeitinho -->
+        <div class="slide bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl text-center">
+            <div class="floating text-6xl mb-6">🍝</div>
+            <!-- Roma Landmarks SVG -->
+            <div class="mb-6">
+                <svg width="350" height="200" viewBox="0 0 350 200" class="mx-auto">
+                    <!-- Céu -->
+                    <rect x="0" y="0" width="350" height="140" fill="#fab1a0"/>
+                    <!-- Fontana di Trevi -->
+                    <rect x="20" y="100" width="80" height="40" fill="#ddd"/>
+                    <rect x="35" y="90" width="50" height="10" fill="#e17055"/>
+                    <!-- Água da fonte -->
+                    <rect x="25" y="130" width="70" height="10" fill="#74b9ff"/>
+                    <circle cx="40" cy="125" r="2" fill="#74b9ff"/>
+                    <circle cx="60" cy="125" r="2" fill="#74b9ff"/>
+                    <circle cx="80" cy="125" r="2" fill="#74b9ff"/>
+                    
+                    <!-- Vaticano (São Pedro) -->
+                    <rect x="130" y="80" width="60" height="60" fill="#ffeaa7"/>
+                    <rect x="155" y="60" width="10" height="20" fill="#8B4513"/>
+                    <circle cx="160" cy="55" r="8" fill="#fdcb6e"/>
+                    <polygon points="160,47 165,55 155,55" fill="#e17055"/>
+                    
+                    <!-- Panteão -->
+                    <rect x="220" y="90" width="50" height="50" fill="#e17055"/>
+                    <polygon points="220,90 245,70 270,90" fill="#8B4513"/>
+                    <rect x="240" y="100" width="10" height="15" fill="#636e72"/>
+                    
+                    <!-- Comida italiana -->
+                    <circle cx="50" cy="170" r="8" fill="#fdcb6e"/>
+                    <polygon points="45,170 50,165 55,170 50,175" fill="#e17055"/>
+                    <text x="50" y="185" text-anchor="middle" class="text-xs custom-brown">PIZZA</text>
+                    
+                    <rect x="140" y="165" width="20" height="8" fill="#ffeaa7"/>
+                    <rect x="142" y="167" width="16" height="4" fill="#e17055"/>
+                    <text x="150" y="185" text-anchor="middle" class="text-xs custom-brown">PASTA</text>
+                    
+                    <circle cx="250" cy="170" r="6" fill="#00b894"/>
+                    <circle cx="248" cy="168" r="2" fill="#e17055"/>
+                    <circle cx="252" cy="172" r="2" fill="#e17055"/>
+                    <text x="250" y="185" text-anchor="middle" class="text-xs custom-brown">GELATO</text>
+                    
+                    <text x="175" y="195" text-anchor="middle" class="text-sm font-semibold custom-brown">ROMA ETERNA</text>
+                </svg>
+            </div>
+            <h1 class="romantic-title text-4xl md:text-5xl font-bold custom-brown mb-6">
+                A Roma do nosso jeitinho
+            </h1>
+            <div class="bg-yellow-100 rounded-2xl p-6 mb-6">
+                <div class="text-lg text-gray-700 mb-3">
+                    🏛️ Coliseu, Fórum, Fontana, Vaticano
+                </div>
+                <div class="text-lg text-gray-700 mb-4">
+                    🍕 Pizza, crocchette e pastas mil
+                </div>
+                <div class="text-xl italic font-medium text-yellow-600">
+                    A gente não reza, mas vai ver um milagre:<br>
+                    <span class="font-bold">eu acordando cedo! 😴</span>
+                </div>
+            </div>
+            <div class="text-4xl">🇻🇦✨</div>
+        </div>
+
+        <!-- Slide 9: Último dia -->
+        <div class="slide bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl text-center">
+            <div class="floating text-6xl mb-6">🍦</div>
+            <!-- Roman Sunset SVG -->
+            <div class="mb-6">
+                <svg width="320" height="180" viewBox="0 0 320 180" class="mx-auto">
+                    <!-- Céu do pôr do sol -->
+                    <rect x="0" y="0" width="320" height="120" fill="#fd79a8"/>
+                    <rect x="0" y="30" width="320" height="30" fill="#fdcb6e"/>
+                    <rect x="0" y="60" width="320" height="30" fill="#fab1a0"/>
+                    <!-- Sol -->
+                    <circle cx="280" cy="45" r="18" fill="#e17055"/>
+                    <!-- Silhueta de Roma -->
+                    <polygon points="0,120 50,100 100,110 150,95 200,105 250,90 300,100 320,95 320,120" fill="#2d3436"/>
+                    <!-- Cúpulas -->
+                    <circle cx="80" cy="100" r="12" fill="#2d3436"/>
+                    <circle cx="180" cy="95" r="15" fill="#2d3436"/>
+                    <circle cx="250" cy="90" r="10" fill="#2d3436"/>
+                    <!-- Torres -->
+                    <rect x="120" y="85" width="8" height="15" fill="#2d3436"/>
+                    <rect x="200" y="80" width="6" height="20" fill="#2d3436"/>
+                    <!-- Casal (silhueta) -->
+                    <circle cx="160" cy="130" r="4" fill="#2d3436"/>
+                    <circle cx="170" cy="130" r="4" fill="#2d3436"/>
+                    <rect x="158" y="134" width="4" height="12" fill="#2d3436"/>
+                    <rect x="168" y="134" width="4" height="12" fill="#2d3436"/>
+                    <!-- Gelato -->
+                    <circle cx="140" cy="140" r="3" fill="#ffeaa7"/>
+                    <rect x="139" y="143" width="2" height="8" fill="#8B4513"/>
+                    <text x="160" y="170" text-anchor="middle" class="text-sm font-semibold custom-brown">ÚLTIMO DIA EM ROMA</text>
+                </svg>
+            </div>
+            <h1 class="romantic-title text-4xl md:text-5xl font-bold custom-brown mb-6">
+                Último dia em Roma...<br>
+                <span class="text-2xl">mas com muito amor!</span>
+            </h1>
+            <div class="bg-purple-100 rounded-2xl p-6 mb-6">
+                <div class="text-lg text-gray-700 mb-2">
+                    📅 Dia 29: mais passeio, mais gelato, mais nós
+                </div>
+                <div class="text-lg custom-brown mb-2">
+                    🚌 Ônibus para o aeroporto às 22h
+                </div>
+                <div class="text-lg custom-brown">
+                    ✈️ Avião às 6h do dia 30/07 para Paris
+                </div>
+            </div>
+            <div class="text-4xl">🌙💫</div>
+        </div>
+
+        <!-- Slide 10: Final -->
+        <div class="slide bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl text-center">
+            <div class="floating text-6xl mb-6">💕</div>
+            <!-- Romantic Couple in Italy SVG -->
+            <div class="mb-6">
+                <svg width="300" height="200" viewBox="0 0 300 200" class="mx-auto">
+                    <!-- Céu romântico -->
+                    <rect x="0" y="0" width="300" height="140" fill="#fd79a8"/>
+                    <!-- Corações flutuando -->
+                    <text x="50" y="30" class="text-lg fill-white">💕</text>
+                    <text x="200" y="25" class="text-sm fill-white">💖</text>
+                    <text x="250" y="40" class="text-lg fill-white">💕</text>
+                    <text x="80" y="50" class="text-sm fill-white">💖</text>
+                    <!-- Paisagem italiana -->
+                    <polygon points="0,140 60,100 120,110 180,90 240,100 300,85 300,140" fill="#00b894"/>
+                    <!-- Casal -->
+                    <circle cx="130" cy="120" r="8" fill="#fab1a0"/>
+                    <circle cx="150" cy="120" r="8" fill="#fd79a8"/>
+                    <rect x="126" y="128" width="8" height="20" fill="#74b9ff"/>
+                    <rect x="146" y="128" width="8" height="20" fill="#ffeaa7"/>
+                    <!-- Braços entrelaçados -->
+                    <line x1="134" y1="135" x2="146" y2="135" stroke="#8B4513" stroke-width="3"/>
+                    <!-- Sombra -->
+                    <ellipse cx="140" cy="148" rx="15" ry="3" fill="#636e72" opacity="0.3"/>
+                    <!-- Elementos italianos -->
+                    <circle cx="80" cy="115" r="6" fill="#00b894"/>
+                    <circle cx="78" cy="113" r="1" fill="#fdcb6e"/>
+                    <circle cx="82" cy="117" r="1" fill="#fdcb6e"/>
+                    <!-- Torre -->
+                    <rect x="200" y="100" width="8" height="25" fill="#e17055"/>
+                    <polygon points="200,100 204,95 208,100" fill="#8B4513"/>
+                    <!-- Frase -->
+                    <text x="150" y="170" text-anchor="middle" class="text-sm font-semibold custom-brown">NOSSA HISTÓRIA DE AMOR</text>
+                    <text x="150" y="185" text-anchor="middle" class="text-xs custom-brown">COMEÇOU AQUI... CONTINUA PARA SEMPRE</text>
+                </svg>
+            </div>
+            <h1 class="romantic-title text-4xl md:text-6xl font-bold custom-brown mb-8">
+                Comer, amar...<br>
+                e viver tudo isso com você ♥️
+            </h1>
+            <div class="bg-pink-200 rounded-2xl p-8 mb-6">
+                <div class="text-3xl font-bold text-pink-700 mb-4">
+                    Te amo.
+                </div>
+                <div class="text-xl text-gray-700">
+                    Essa viagem é só o começo.
+                </div>
+            </div>
+            <div class="heart-pulse text-6xl">💖</div>
+        </div>
+
+        <!-- Slide 11: Interactive Timeline -->
+        <div class="slide bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
+            <h1 class="romantic-title text-4xl md:text-5xl font-bold custom-brown mb-8 text-center">
+                Nossa Linha do Tempo Interativa ❤️
+            </h1>
+            <p class="text-center text-gray-600 mb-8">Clique em cada dia para descobrir mais detalhes da nossa aventura!</p>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <!-- Linha principal -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-pink-400 to-red-400 h-full"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-8">
+                    <!-- Dia 24/07 -->
+                    <div class="relative flex items-center timeline-item" data-day="day1">
+                        <div class="flex-1 text-right pr-8">
+                            <div class="bg-pink-100 rounded-lg p-4 cursor-pointer hover:bg-pink-200 transition-all duration-300 hover:shadow-lg">
+                                <div class="text-lg font-bold custom-brown">24/07 - Partida ✈️</div>
+                                <div class="text-sm text-gray-600">Nantes → Salerno</div>
+                                <div class="text-sm text-pink-600">Clique para mais detalhes</div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-pink-400 rounded-full flex items-center justify-center text-white font-bold z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                            ✈️
+                        </div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- Dia 25/07 -->
+                    <div class="relative flex items-center timeline-item" data-day="day2">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center text-white font-bold z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                            🏖️
+                        </div>
+                        <div class="flex-1 pl-8">
+                            <div class="bg-blue-100 rounded-lg p-4 cursor-pointer hover:bg-blue-200 transition-all duration-300 hover:shadow-lg">
+                                <div class="text-lg font-bold custom-brown">25/07 - Costa Amalfitana 🏖️</div>
+                                <div class="text-sm text-gray-600">Praias + Sorrento</div>
+                                <div class="text-sm text-blue-600">Clique para mais detalhes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dias 26-27/07 -->
+                    <div class="relative flex items-center timeline-item" data-day="day3">
+                        <div class="flex-1 text-right pr-8">
+                            <div class="bg-cyan-100 rounded-lg p-4 cursor-pointer hover:bg-cyan-200 transition-all duration-300 hover:shadow-lg">
+                                <div class="text-lg font-bold custom-brown">26-27/07 - CAPRI! 🌴</div>
+                                <div class="text-sm text-gray-600">Passeio de barco + Grutas</div>
+                                <div class="text-sm text-cyan-600">Clique para mais detalhes</div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-cyan-400 rounded-full flex items-center justify-center text-white font-bold z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                            🛥️
+                        </div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- Báia Regina Giovanna -->
+                    <div class="relative flex items-center timeline-item" data-day="day4">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-teal-400 rounded-full flex items-center justify-center text-white font-bold z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                            🏊‍♀️
+                        </div>
+                        <div class="flex-1 pl-8">
+                            <div class="bg-teal-100 rounded-lg p-4 cursor-pointer hover:bg-teal-200 transition-all duration-300 hover:shadow-lg">
+                                <div class="text-lg font-bold custom-brown">Báia Regina Giovanna 🏊‍♀️</div>
+                                <div class="text-sm text-gray-600">Nadar + Explorar grutas</div>
+                                <div class="text-sm text-teal-600">Clique para mais detalhes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dia 28/07 -->
+                    <div class="relative flex items-center timeline-item" data-day="day5">
+                        <div class="flex-1 text-right pr-8">
+                            <div class="bg-red-100 rounded-lg p-4 cursor-pointer hover:bg-red-200 transition-all duration-300 hover:shadow-lg">
+                                <div class="text-lg font-bold custom-brown">28/07 - Roma Chegada 🏛️</div>
+                                <div class="text-sm text-gray-600">Ônibus 6h → Roma 10h</div>
+                                <div class="text-sm text-red-600">Clique para mais detalhes</div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-red-400 rounded-full flex items-center justify-center text-white font-bold z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                            🏛️
+                        </div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- Dia 29/07 -->
+                    <div class="relative flex items-center timeline-item" data-day="day6">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                            🍝
+                        </div>
+                        <div class="flex-1 pl-8">
+                            <div class="bg-yellow-100 rounded-lg p-4 cursor-pointer hover:bg-yellow-200 transition-all duration-300 hover:shadow-lg">
+                                <div class="text-lg font-bold custom-brown">29/07 - Roma Completa 🍝</div>
+                                <div class="text-sm text-gray-600">Coliseu + Vaticano + Fontana</div>
+                                <div class="text-sm text-yellow-600">Clique para mais detalhes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dia 30/07 -->
+                    <div class="relative flex items-center timeline-item" data-day="day7">
+                        <div class="flex-1 text-right pr-8">
+                            <div class="bg-purple-100 rounded-lg p-4 cursor-pointer hover:bg-purple-200 transition-all duration-300 hover:shadow-lg">
+                                <div class="text-lg font-bold custom-brown">30/07 - Volta 🏠</div>
+                                <div class="text-sm text-gray-600">Avião 6h → Paris</div>
+                                <div class="text-sm text-purple-600">Clique para mais detalhes</div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-white font-bold z-10 cursor-pointer hover:scale-110 transition-transform duration-300">
+                            🏠
+                        </div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal para detalhes -->
+            <div id="dayModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+                <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 id="modalTitle" class="romantic-title text-3xl font-bold custom-brown"></h2>
+                            <button id="closeModal" class="text-gray-500 hover:text-gray-700 text-3xl">&times;</button>
+                        </div>
+                        <div id="modalContent" class="space-y-4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <div class="bg-gradient-to-r from-pink-200 to-red-200 rounded-2xl p-6">
+                    <div class="text-2xl font-bold custom-brown mb-2">
+                        6 dias de puro amor na Itália 🇮🇹
+                    </div>
+                    <div class="text-lg text-gray-700">
+                        Uma aventura que vai ficar para sempre em nossos corações ❤️
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegação -->
+        <div class="flex justify-between items-center mt-8">
+            <button id="prevBtn" class="bg-custom-brown text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-80 transition-all duration-300 disabled:opacity-50">
+                ← Anterior
+            </button>
+            
+            <div class="flex space-x-2">
+                <span id="slideCounter" class="bg-white/80 px-4 py-2 rounded-full custom-brown font-semibold">
+                    1 / 11
+                </span>
+            </div>
+            
+            <button id="nextBtn" class="bg-custom-brown text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-80 transition-all duration-300">
+                Próximo →
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slideCounter');
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            
+            slideCounter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+            
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.textContent = currentSlide === totalSlides - 1 ? 'Recomeçar ❤️' : 'Próximo →';
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+
+        // Navegação por teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' && currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            } else if (e.key === 'ArrowRight') {
+                showSlide(currentSlide + 1);
+            }
+        });
+
+        // Inicializar
+        showSlide(0);
+
+        // Timeline interativa
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        const modal = document.getElementById('dayModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+        const closeModal = document.getElementById('closeModal');
+
+        const dayDetails = {
+            day1: {
+                title: '24/07 - Partida para o Amor ✈️',
+                content: `
+                    <div class="space-y-6">
+                        <div class="bg-pink-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🛫 Detalhes do Voo</h3>
+                            <p class="text-gray-700 mb-2"><strong>Saída:</strong> Nantes, França</p>
+                            <p class="text-gray-700 mb-2"><strong>Destino:</strong> Salerno, Itália</p>
+                            <p class="text-gray-700"><strong>Hospedagem:</strong> Suite 84 Holiday Home</p>
+                        </div>
+                        <div class="bg-pink-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">💕 O que esperar</h3>
+                            <p class="text-gray-700 mb-2">• Primeira noite na Itália juntos</p>
+                            <p class="text-gray-700 mb-2">• Jantar romântico italiano</p>
+                            <p class="text-gray-700">• Planejamento dos próximos dias de aventura</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">🌟</div>
+                            <p class="italic text-gray-600">"O começo da nossa aventura italiana!"</p>
+                        </div>
+                    </div>
+                `
+            },
+            day2: {
+                title: '25/07 - Costa Amalfitana 🏖️',
+                content: `
+                    <div class="space-y-6">
+                        <div class="bg-blue-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🚌 Roteiro do Dia</h3>
+                            <p class="text-gray-700 mb-2"><strong>Transporte:</strong> Ônibus pela costa</p>
+                            <p class="text-gray-700 mb-2"><strong>Paradas:</strong> Você escolhe as praias!</p>
+                            <p class="text-gray-700"><strong>Final:</strong> Chegada em Sorrento</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🏖️ Atividades</h3>
+                            <p class="text-gray-700 mb-2">• Banho de mar nas praias mais lindas da Itália</p>
+                            <p class="text-gray-700 mb-2">• Fotos incríveis na estrada costeira</p>
+                            <p class="text-gray-700 mb-2">• Almoço com vista para o mar</p>
+                            <p class="text-gray-700">• Check-in no Glamping Santa Fortunata</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">🌊</div>
+                            <p class="italic text-gray-600">"Onde o mar encontra o nosso amor!"</p>
+                        </div>
+                    </div>
+                `
+            },
+            day3: {
+                title: '26-27/07 - CAPRI! Seu Sonho Realizado 🌴',
+                content: `
+                    <div class="space-y-6">
+                        <div class="bg-cyan-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🛥️ Passeio de Barco</h3>
+                            <p class="text-gray-700 mb-2"><strong>Destino:</strong> Ilha de Capri</p>
+                            <p class="text-gray-700 mb-2"><strong>Highlights:</strong> Gruta Azul, Faraglioni</p>
+                            <p class="text-gray-700"><strong>Duração:</strong> Dia inteiro no paraíso</p>
+                        </div>
+                        <div class="bg-cyan-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🏝️ Experiências Únicas</h3>
+                            <p class="text-gray-700 mb-2">• Navegação pelo mar azul cristalino</p>
+                            <p class="text-gray-700 mb-2">• Exploração das grutas famosas</p>
+                            <p class="text-gray-700 mb-2">• Almoço na ilha mais charmosa da Itália</p>
+                            <p class="text-gray-700 mb-2">• Compras nas boutiques locais</p>
+                            <p class="text-gray-700">• Pôr do sol romântico no mar</p>
+                        </div>
+                        <div class="text-center bg-gradient-to-r from-cyan-100 to-blue-100 rounded-lg p-4">
+                            <div class="text-4xl mb-2">💙</div>
+                            <p class="italic text-gray-600 font-semibold">"SEU MAIOR SONHO SE TORNANDO REALIDADE!"</p>
+                            <p class="text-sm text-gray-500 mt-2">Capri sempre foi seu destino dos sonhos ❤️</p>
+                        </div>
+                    </div>
+                `
+            },
+            day4: {
+                title: 'Báia Regina Giovanna - Paraíso Secreto 🏊‍♀️',
+                content: `
+                    <div class="space-y-6">
+                        <div class="bg-teal-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🏊‍♂️ Dia de Relaxamento</h3>
+                            <p class="text-gray-700 mb-2"><strong>Local:</strong> Báia Regina Giovanna</p>
+                            <p class="text-gray-700 mb-2"><strong>Especial:</strong> Formação rochosa natural</p>
+                            <p class="text-gray-700"><strong>Vibe:</strong> Paraíso escondido dos deuses</p>
+                        </div>
+                        <div class="bg-teal-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🌊 Atividades Aquáticas</h3>
+                            <p class="text-gray-700 mb-2">• Natação em águas cristalinas</p>
+                            <p class="text-gray-700 mb-2">• Exploração de grutas submarinas</p>
+                            <p class="text-gray-700 mb-2">• Mergulho livre (snorkeling)</p>
+                            <p class="text-gray-700 mb-2">• Banho de sol nas rochas</p>
+                            <p class="text-gray-700">• Piquenique romântico à beira-mar</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">🧜‍♀️</div>
+                            <p class="italic text-gray-600">"Onde até os deuses vêm tomar banho!"</p>
+                        </div>
+                    </div>
+                `
+            },
+            day5: {
+                title: '28/07 - Chegada à Cidade Eterna 🏛️',
+                content: `
+                    <div class="space-y-6">
+                        <div class="bg-red-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🚌 Viagem para Roma</h3>
+                            <p class="text-gray-700 mb-2"><strong>Saída:</strong> 6h da manhã de Sorrento</p>
+                            <p class="text-gray-700 mb-2"><strong>Chegada:</strong> 10h em Roma</p>
+                            <p class="text-gray-700"><strong>Hotel:</strong> Hotel Cosmos (Via Emanuele Filiberto)</p>
+                        </div>
+                        <div class="bg-red-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🏛️ Primeira Impressão</h3>
+                            <p class="text-gray-700 mb-2">• Check-in no hotel no centro histórico</p>
+                            <p class="text-gray-700 mb-2">• Primeira caminhada pelas ruas romanas</p>
+                            <p class="text-gray-700 mb-2">• Almoço italiano autêntico</p>
+                            <p class="text-gray-700">• Reconhecimento da área e planejamento</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-2">🦅</div>
+                            <p class="italic text-gray-600">"Roma não foi construída em um dia, mas nosso amor sim!"</p>
+                        </div>
+                    </div>
+                `
+            },
+            day6: {
+                title: '29/07 - Roma Completa: História e Sabor 🍝',
+                content: `
+                    <div class="space-y-6">
+                        <div class="bg-yellow-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🏛️ Pontos Turísticos</h3>
+                            <p class="text-gray-700 mb-2"><strong>Manhã:</strong> Coliseu e Fórum Romano</p>
+                            <p class="text-gray-700 mb-2"><strong>Tarde:</strong> Vaticano e Basílica de São Pedro</p>
+                            <p class="text-gray-700"><strong>Noite:</strong> Fontana di Trevi e Panteão</p>
+                        </div>
+                        <div class="bg-yellow-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">🍕 Experiência Gastronômica</h3>
+                            <p class="text-gray-700 mb-2">• Pizza autêntica romana</p>
+                            <p class="text-gray-700 mb-2">• Crocchette deliciosos</p>
+                            <p class="text-gray-700 mb-2">• Pasta fresca caseira</p>
+                            <p class="text-gray-700 mb-2">• Gelato artesanal</p>
+                            <p class="text-gray-700">• Vinho italiano para brindar</p>
+                        </div>
+                        <div class="text-center bg-gradient-to-r from-yellow-100 to-orange-100 rounded-lg p-4">
+                            <div class="text-4xl mb-2">🇻🇦</div>
+                            <p class="italic text-gray-600 font-semibold">"Não rezamos, mas vamos ver um milagre:"</p>
+                            <p class="text-lg font-bold text-yellow-600">EU ACORDANDO CEDO! 😴</p>
+                        </div>
+                    </div>
+                `
+            },
+            day7: {
+                title: '30/07 - Volta com o Coração Cheio 🏠',
+                content: `
+                    <div class="space-y-6">
+                        <div class="bg-purple-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">✈️ Detalhes da Volta</h3>
+                            <p class="text-gray-700 mb-2"><strong>Ônibus:</strong> 22h do dia 29 para o aeroporto</p>
+                            <p class="text-gray-700 mb-2"><strong>Voo:</strong> 6h da manhã para Paris</p>
+                            <p class="text-gray-700"><strong>Chegada:</strong> Casa, mas com o coração na Itália</p>
+                        </div>
+                        <div class="bg-purple-50 rounded-lg p-4">
+                            <h3 class="text-xl font-bold custom-brown mb-3">💝 Lembranças para Sempre</h3>
+                            <p class="text-gray-700 mb-2">• Centenas de fotos incríveis</p>
+                            <p class="text-gray-700 mb-2">• Sabores que nunca vamos esquecer</p>
+                            <p class="text-gray-700 mb-2">• Momentos únicos só nossos</p>
+                            <p class="text-gray-700 mb-2">• Histórias para contar para sempre</p>
+                            <p class="text-gray-700">• Um amor ainda mais forte</p>
+                        </div>
+                        <div class="text-center bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-4">
+                            <div class="text-4xl mb-2">💕</div>
+                            <p class="italic text-gray-600 font-semibold">"A viagem acaba, mas nossa história de amor"</p>
+                            <p class="text-lg font-bold text-purple-600">CONTINUA PARA SEMPRE! ❤️</p>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        timelineItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const day = item.getAttribute('data-day');
+                const details = dayDetails[day];
+                
+                modalTitle.textContent = details.title;
+                modalContent.innerHTML = details.content;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Fechar modal com ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96009fdb5408d11f',t:'MTc1MjY1OTczMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
